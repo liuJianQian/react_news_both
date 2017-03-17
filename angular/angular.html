@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body ng-app="noteApp" ng-controller="NoteCtrl">
+    <h1>我的笔记</h1>
+    <textarea cols="30" row="10" ng-model="notes"></textarea>
+    <p>
+        <button ng-click="save()">保存</button>
+        <button ng-click="read()">读取</button>
+        <button ng-click="clear()">清除</button>
+    </p>
+    <p>剩余字数: {{noteCount()}}</p>
+
+    <script>
+        var foo = function bar() {
+//            console.log(bar);
+//            console.log(foo === bar);
+            console.log(1)
+        }
+//        foo();
+        console.log(foo.constructor == foo) ;
+//        console.log()
+//        foo.prototype.constructor()
+    </script>
+<script type="text/javascript" src="./angular.js"></script>
+<script type="text/javascript" src="./app.js"></script>
+</body>
+</html>
+
